@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "646cf79ff623f2744486fbd3",
+    "name": "Hôtel Du Port",
+    "price": 52,
+    "note": 5,
+    "photo": "fred-kleber.jpg"
+  },
+  {
+    "_id": "646cf7c48e6fdbf9eb2a9645",
+    "name": "Hôtel Chez Amina",
+    "price": 96,
+    "note": 4,
+    "photo": "febrian-zakaria.jpg"
+  },
+  {
+    "_id": "646d08faee31500c8b86c39c",
+    "name": "Hôtel Les mouettes",
+    "price": 76,
+    "note": 4,
+    "photo": "reisetopia.jpg"
+  },
+  {
+    "_id": "646d0a855fe543d3ed6d6a82",
+    "name": "Hôtel de la mer",
+    "price": 46,
+    "note": 3,
+    "photo": "annie-spratt.jpg"
+  },
+  {
+    "_id": "646d0a8d1bdeb0b4283c4b4d",
+    "name": "Auberge La Canebière",
+    "price": 25,
+    "note": 4,
+    "photo": "marcus-loke.jpg"
+  },
+  {
+    "_id": "646d0a91e942ce1203259ce2",
+    "name": "Auberge Le Panier",
+    "price": 23,
+    "note": 4,
+    "photo": "nicate-lee.jpg"
+  },
+  {
+    "_id": "646d0e6bc54b361cc9bc6acf",
+    "name": "Hôtel Le Soleil du matin",
+    "price": 128,
+    "note": 5,
+    "photo": "emile-guillemot.jpg",
+    "isPopular": true
+  },
+  {
+    "_id": "646d0e737f8064d0e33c1e98",
+    "name": "Chambres d'hôtes Au coeur de l'eau",
+    "price": 71,
+    "note": 4,
+    "photo": "aw-creative.jpg",
+    "isPopular": true
+  },
+  {
+    "_id": "646d0e77ca0400d526f6845e",
+    "name": "Hôtel Bleu et Blanc",
+    "price": 68,
+    "note": 4,
+    "photo": "febrian-zakaria2.jpg",
+    "isPopular": true
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "646d0ffe0d451c244369a209",
+    "name": "Vieux-Port",
+    "photo": "reno-laithienne.jpg"
+  },
+  {
+    "_id": "646d1002951300a9c59fb398",
+    "name": "Fort de Pomègues",
+    "photo": "paul-hermann.jpg"
+  },
+  {
+    "_id": "646d10069afc101a2dd19699",
+    "name": "Parc national des Calanques",
+    "photo": "kilyan-sockalingum.jpg"
+  },
+  {
+    "_id": "646d10096f1161524e74baed",
+    "name": "Notre-Dame-de-la-Garde",
+    "photo": "florian-wehde.jpg"
+  }
+]

@@ -1,22 +1,24 @@
 import express from "express";
+import mongoose from "mongoose";
+import accommodations from "./routes/routes";
+import { initializeData } from "./services/database";
 
 const app = express();
 
 app.use(express.json());
+app.use("/api/accommodations", accommodations);
 
-app.get("/", (req, res) => {
-  return res.send("Hello world");
-});
+const loginDb = async () => {
+  try {
+    await mongoose.connect("mongodb://127.0.0.1:27017/Bookie");
+    console.log("Connect to Database");
+    await initializeData();
+  } catch (error) {
+    console.log(error);
+  }
+};
 
-app.post("/api/data", (req, res) => {
-  console.log(req.body);
-
-  return res.sendStatus(200);
-});
-
-app.all("/api/all", (req, res) => {
-  return res.sendStatus(200);
-});
+loginDb();
 
 app.listen(3000, () => {
   console.log("Application listening at http://localhost:3000");
