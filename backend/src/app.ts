@@ -1,11 +1,12 @@
 import express from "express";
 import mongoose from "mongoose";
-import accommodations from "./routes/routes";
+import accommodations from "./routes/accommodations";
 import { initializeData } from "./services/database";
 
 const app = express();
 
 app.use(express.json());
+app.use("/api/accommodations", accommodations);
 app.use("/api/accommodations", accommodations);
 
 const loginDb = async () => {
