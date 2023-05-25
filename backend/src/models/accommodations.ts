@@ -19,3 +19,7 @@ const accommodationSchema = new Schema<IAccommodation>({
 });
 
 export const Accommodation = model<IAccommodation>("Accommodation", accommodationSchema);
+
+export interface IGetAccomodationQuery {
+  isPopular: boolean;
+}

@@ -1,8 +1,10 @@
-import data from "../data/accommodations.json";
+import accommodationsData from "../data/accommodations.json";
+import activitiesData from "../data/activities.json";
 import { Accommodation } from "../models/accommodations";
+import { Activities } from "../models/activities";
 
 export const initializeData = async () => {
-  for (const item of data) {
+  for (const item of accommodationsData) {
     if (await Accommodation.findById(item._id)) {
       continue;
     } else {
@@ -16,6 +18,20 @@ export const initializeData = async () => {
       });
 
       accommodations.save();
+    }
+  }
+
+  for (const item of activitiesData) {
+    if (await Activities.findById(item._id)) {
+      continue;
+    } else {
+      const activities = new Activities({
+        _id: item._id,
+        name: item.name,
+        photo: item.photo,
+      });
+
+      activities.save();
     }
   }
 };

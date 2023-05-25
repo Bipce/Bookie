@@ -1,15 +1,20 @@
-import express from "express";
-import { Accommodation } from "../models/accommodations";
+import express, { Request, Response } from "express";
+import { Accommodation, IGetAccomodationQuery } from "../models/accommodations";
 
 const router = express.Router();
 
-router.post("/", async (req, res) => {
-  return res.send();
+router.get("/", async (req: Request<null, null, null, IGetAccomodationQuery>, res: Response) => {
+  const { isPopular } = req.query;
+
+  return res.json(await Accommodation.find({ isPopular }));
 });
 
-router.get("/", async (req, res) => {
-  const accommodations = await Accommodation.find();
-  return res.json(accommodations);
+router.get("/:id", async (req, res) => {
+  const accommodation = await Accommodation.findById(req.params.id);
+  if (!accommodation) {
+    return res.status(404).json("Not found");
+  }
+  return res.json(accommodation);
 });
 
 export default router;
