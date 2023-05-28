@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -24,6 +25,47 @@ ul {
   list-style: none;
 }
 
-.container {
+button,
+input {
+  border: none;
+  background-color: transparent;
+}
+
+.main-wrapper {
   margin: 30px 20px;
+}
+
+/* Colors */
+.color-primary {
+  color: #0065fc;
+}
+
+.color-secondary {
+  color: #deebff;
+}
+
+.bck-color-primary {
+  background-color: #d9d9d9;
+}
+
+.bck-color-secondary {
+  background-color: #f2f2f2;
+}
+
+/* Font-size */
+.fz16 {
+  font-size: 16px;
+}
+
+.fz18 {
+  font-size: 18px;
+}
+
+.fz22 {
+  font-size: 22px;
+}
+
+/* Margins */
+.marbot35 {
+  margin-bottom: 35px;
 }

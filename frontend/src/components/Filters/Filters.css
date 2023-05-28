@@ -1,0 +1,83 @@
+.catchphrase {
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 335px;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  height: 49px;
+}
+
+.navbar svg {
+  height: 19px;
+}
+
+.map-icon {
+  padding: 15px 18.5px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.loop-icon {
+  color: #fff;
+  background-color: #0065fc;
+  padding: 15.5px 16px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.searchBar {
+  width: 195px;
+  outline: none;
+}
+
+/* Filters */
+.filters-title {
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 48%;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  padding: 17px;
+  font-weight: 700;
+}
+
+.filter:hover {
+  background-color: #deebff;
+  transition: 0.2s;
+}
+
+.filter svg {
+  font-size: 22px;
+}
+
+/* Info */
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info svg {
+  color: #0065fc;
+  border: 2px solid #d9d9d9;
+  border-radius: 100%;
+  width: 4px;
+  padding: 2px 8px;
+}
