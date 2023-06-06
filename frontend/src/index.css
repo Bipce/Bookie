@@ -35,6 +35,10 @@ input {
   margin: 30px 20px;
 }
 
+.txt-center {
+  text-align: center;
+}
+
 /* Colors */
 .color-primary {
   color: #0065fc;

@@ -3,12 +3,18 @@ import mongoose from "mongoose";
 import accommodations from "./routes/accommodations";
 import activities from "./routes/activities";
 import { initializeData } from "./services/database";
+import cors from "cors";
+import path from "path";
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
+
 app.use("/api/accommodations", accommodations);
 app.use("/api/activities", activities);
+
+app.use(express.static(path.join(__dirname, "../public")));
 
 const loginDb = async () => {
   try {

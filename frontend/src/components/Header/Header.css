@@ -1,10 +1,9 @@
-header {
-  text-align: center;
+.header {
   margin: 30px 0;
   height: 97px;
 }
 
-header h1 {
+.title {
   margin-bottom: 30px;
   flex-grow: 1;
 }
@@ -15,16 +14,16 @@ header h1 {
   cursor: pointer;
 }
 
-ul {
+.anchors {
   display: flex;
   justify-content: space-around;
 }
 
-.anchor li {
+.anchor {
   width: 50%;
   padding-bottom: 15px;
 }
 
-.anchor li:hover {
+.anchor:hover {
   border-bottom: 2px solid;
 }

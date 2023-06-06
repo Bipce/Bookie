@@ -12,7 +12,7 @@ import "./Filters.css";
 
 const Filters = () => {
   return (
-    <>
+    <div className="filters-container marbot35">
       <h2 className="fz22">Trouvez votre hébergement pour des vacances de rêve</h2>
       <h3 className="catchphrase fz16 marbot35">En plein centre-ville ou en pleine nature</h3>
 
@@ -50,7 +50,7 @@ const Filters = () => {
         <FontAwesomeIcon icon={faInfo} />
         Plus de 500 logements sont disponible dans cette ville
       </p>
-    </>
+    </div>
   );
 };
 
