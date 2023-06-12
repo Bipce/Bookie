@@ -7,11 +7,9 @@ const App = () => {
     <Router>
       <Header />
 
-      <div className="main-wrapper">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </Router>
   );
 };
