@@ -6,6 +6,10 @@ const router = express.Router();
 router.get("/", async (req: Request<null, null, null, IGetAccomodationQuery>, res: Response) => {
   const { isPopular } = req.query;
 
+  if (isPopular == null) {
+    return res.json(await Accommodation.find());
+  }
+
   return res.json(await Accommodation.find({ isPopular }));
 });
 

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine, faStar } from "@fortawesome/free-solid-svg-icons";
-import { getPopular } from "../../services/popular";
+import { getAccommodations } from "../../services/backend";
 import { useEffect, useState } from "react";
 import { IAccommodation } from "../../models/accommodations";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ const Popular = () => {
 
   useEffect(() => {
     (async () => {
-      setPopupars(await getPopular());
+      setPopupars(await getAccommodations(true));
     })();
   }, []);
 
@@ -41,7 +41,14 @@ const Popular = () => {
                         <strong>€</strong>
                       </p>
                     </div>
-                    <div className="popular-note">{popular.note < 5 && <FontAwesomeIcon icon={faStar} />}</div>
+                    <div className="popular-note">
+                      {[...Array(popular.note)].map((_, i) => (
+                        <FontAwesomeIcon icon={faStar} style={{ color: "#0065fc" }} key={i} />
+                      ))}
+                      {[...Array(5 - popular.note)].map((_, i) => (
+                        <FontAwesomeIcon icon={faStar} key={i} />
+                      ))}
+                    </div>
                   </div>
                 </article>
               </Link>

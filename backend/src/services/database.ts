@@ -14,7 +14,7 @@ export const initializeData = async () => {
         price: item.price,
         note: item.note,
         photo: item.photo,
-        isPopular: item.isPopular,
+        isPopular: item.isPopular ?? false,
       });
 
       accommodations.save();

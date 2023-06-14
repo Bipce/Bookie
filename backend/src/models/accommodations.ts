@@ -15,7 +15,7 @@ const accommodationSchema = new Schema<IAccommodation>({
   price: { type: Number, required: true },
   note: { type: Number, required: true },
   photo: { type: String, required: true },
-  isPopular: Boolean,
+  isPopular: { type: Boolean, required: true },
 });
 
 export const Accommodation = model<IAccommodation>("Accommodation", accommodationSchema);
