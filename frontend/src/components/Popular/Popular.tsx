@@ -41,7 +41,13 @@ const Popular = () => {
                         <strong>€</strong>
                       </p>
                     </div>
-                    <div className="popular-note">{popular.note < 5 && <FontAwesomeIcon icon={faStar} />}</div>
+                    <div className="popular-note">
+                      {popular.note == 4 ? (
+                        <FontAwesomeIcon icon={faStar} style={{ color: "#0065fc" }} />
+                      ) : (
+                        <FontAwesomeIcon icon={faStar} />
+                      )}
+                    </div>
                   </div>
                 </article>
               </Link>
