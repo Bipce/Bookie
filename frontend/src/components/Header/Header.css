@@ -1,11 +1,11 @@
 .header {
   margin: 30px 0;
   height: 97px;
+  text-align: center;
 }
 
 .title {
   margin-bottom: 30px;
-  flex-grow: 1;
 }
 
 .logo {
@@ -16,14 +16,49 @@
 
 .anchors {
   display: flex;
-  justify-content: space-around;
 }
 
 .anchor {
   width: 50%;
+}
+
+.anchor a:hover {
+  border-bottom: 2px solid;
+  color: #0065fc;
+  width: 100%;
   padding-bottom: 15px;
 }
 
-.anchor:hover {
-  border-bottom: 2px solid;
+@media (min-width: 1024px) {
+  .header {
+    text-align: start;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title {
+    width: 10%;
+    margin-top: 20px;
+  }
+
+  .anchors {
+    min-width: 320px;
+    justify-content: space-around;
+  }
+
+  .anchor {
+    width: fit-content;
+  }
+
+  .anchor a {
+    padding-top: 20px;
+  }
+
+  .anchor a:hover {
+    border-bottom: none;
+    border-top: 2px solid;
+    color: #0065fc;
+    width: 100%;
+  }
 }

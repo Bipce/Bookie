@@ -13,6 +13,7 @@
 a {
   text-decoration: none;
   color: #000;
+  display: inline-block;
 }
 
 body {
@@ -87,4 +88,10 @@ img {
 .flex-justify-sb {
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .margin-wrapper {
+    margin: 30px 40px;
+  }
 }

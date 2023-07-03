@@ -16,46 +16,44 @@ const Popular = () => {
   }, []);
 
   return (
-    <main className="bck-color-secondary">
-      <div className="margin-wrapper">
-        <section className="popular-box flex-column">
-          <h2 className="fz22 flex-justify-sb">
-            Les plus populaires
-            <FontAwesomeIcon icon={faChartLine} className="color-primary" />
-          </h2>
+    <main>
+      <section className="popular-box">
+        <h2 className="fz22 flex-justify-sb popular-title">
+          Les plus populaires
+          <FontAwesomeIcon icon={faChartLine} className="color-primary" />
+        </h2>
 
-          {populars?.map(popular => {
-            return (
-              <Link to="/" key={popular._id}>
-                <article className="popular-article">
-                  <img
-                    src={`http://localhost:3000/images/accommodations/${popular.photo}`}
-                    alt={popular.name}
-                    className="popular-img"
-                  />
-                  <div className="popular-content flex-column flex-justify-sb">
-                    <div className="popular-name-price flex-column">
-                      <h2 className="fz16">{popular.name}</h2>
-                      <p>
-                        Nuit à partir de {popular.price}
-                        <strong>€</strong>
-                      </p>
-                    </div>
-                    <div className="popular-note">
-                      {[...Array(popular.note)].map((_, i) => (
-                        <FontAwesomeIcon icon={faStar} style={{ color: "#0065fc" }} key={i} />
-                      ))}
-                      {[...Array(5 - popular.note)].map((_, i) => (
-                        <FontAwesomeIcon icon={faStar} key={i} />
-                      ))}
-                    </div>
+        {populars?.map(popular => {
+          return (
+            <Link to="/" key={popular._id}>
+              <article className="popular-article">
+                <img
+                  src={`http://localhost:3000/images/accommodations/${popular.photo}`}
+                  alt={popular.name}
+                  className="popular-img"
+                />
+                <div className="popular-content flex-column flex-justify-sb">
+                  <div className="popular-name-price flex-column">
+                    <h2 className="fz16">{popular.name}</h2>
+                    <p>
+                      Nuit à partir de {popular.price}
+                      <strong>€</strong>
+                    </p>
                   </div>
-                </article>
-              </Link>
-            );
-          })}
-        </section>
-      </div>
+                  <div className="popular-note">
+                    {[...Array(popular.note)].map((_, i) => (
+                      <FontAwesomeIcon icon={faStar} style={{ color: "#0065fc" }} key={i} />
+                    ))}
+                    {[...Array(5 - popular.note)].map((_, i) => (
+                      <FontAwesomeIcon icon={faStar} key={i} />
+                    ))}
+                  </div>
+                </div>
+              </article>
+            </Link>
+          );
+        })}
+      </section>
     </main>
   );
 };

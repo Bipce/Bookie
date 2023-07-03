@@ -82,3 +82,32 @@
   width: 4px;
   padding: 2px 8px;
 }
+
+@media (min-width: 1024px) {
+  .navbar {
+    width: fit-content;
+    gap: 0;
+  }
+
+  .searchBar {
+    padding-left: 20px;
+  }
+
+  .loop-icon {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .searchWord {
+    font-weight: 700;
+    padding: 15px 16px 15px 16px;
+  }
+
+  .filtersBox {
+    width: 668px;
+  }
+
+  .filters {
+    flex-wrap: nowrap;
+    font-size: 16px;
+  }
+}

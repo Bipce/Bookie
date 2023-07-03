@@ -9,8 +9,23 @@ import {
   faInfo,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Filters.css";
+import { useEffect, useState } from "react";
 
 const Filters = () => {
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   return (
     <div className="margin-wrapper">
       <div className="filters-container marbot35">
@@ -24,11 +39,15 @@ const Filters = () => {
             <input type="text" name="searchBar" id="searchBar" placeholder="Ville, Pays" className="searchBar fz18" />
           </form>
           <button>
-            <FontAwesomeIcon icon={faMagnifyingGlass} className="loop-icon" />
+            {windowSize < 1024 ? (
+              <FontAwesomeIcon icon={faMagnifyingGlass} className="loop-icon" />
+            ) : (
+              <p className="fz18 loop-icon searchWord">Rechercher</p>
+            )}
           </button>
         </nav>
 
-        <div>
+        <div className="filtersBox">
           <h2 className="fz18 filters-title">Filtres</h2>
 
           <ul className="filters marbot35">

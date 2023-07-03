@@ -1,6 +1,10 @@
 .popular-box {
-  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
   gap: 15px;
+  background-color: #f2f2f2;
+  margin: 0;
 }
 
 .popular-article {
@@ -31,4 +35,25 @@
 
 .popular-note svg {
   color: #f2f2f2;
+}
+
+@media (min-width: 1024px) {
+  .popular-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 30px 20px;
+    border-radius: 15px;
+    margin: 30px 40px;
+    padding: 35px;
+  }
+
+  .popular-title {
+    width: 100%;
+  }
+
+  .popular-box a {
+    width: 30%;
+  }
 }
