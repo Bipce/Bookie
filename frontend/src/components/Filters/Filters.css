@@ -83,7 +83,7 @@
   padding: 2px 8px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .navbar {
     width: fit-content;
     gap: 0;
@@ -109,5 +109,16 @@
   .filters {
     flex-wrap: nowrap;
     font-size: 16px;
+  }
+
+  .filter {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1024px) {
+  .filtersBox {
+    display: flex;
+    justify-content: space-between;
   }
 }

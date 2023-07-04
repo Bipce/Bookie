@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 
 const Filters = () => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const WINDOW_BREAKPOINT = 768;
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -39,7 +40,7 @@ const Filters = () => {
             <input type="text" name="searchBar" id="searchBar" placeholder="Ville, Pays" className="searchBar fz18" />
           </form>
           <button>
-            {windowSize < 1024 ? (
+            {windowSize < WINDOW_BREAKPOINT ? (
               <FontAwesomeIcon icon={faMagnifyingGlass} className="loop-icon" />
             ) : (
               <p className="fz18 loop-icon searchWord">Rechercher</p>

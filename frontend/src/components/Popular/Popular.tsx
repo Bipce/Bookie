@@ -16,13 +16,15 @@ const Popular = () => {
   }, []);
 
   return (
-    <main>
-      <section className="popular-box">
+    <section className="popular-box">
+      <div>
         <h2 className="fz22 flex-justify-sb popular-title">
           Les plus populaires
           <FontAwesomeIcon icon={faChartLine} className="color-primary" />
         </h2>
+      </div>
 
+      <div className="poupular-box__articles">
         {populars?.map(popular => {
           return (
             <Link to="/" key={popular._id}>
@@ -32,6 +34,7 @@ const Popular = () => {
                   alt={popular.name}
                   className="popular-img"
                 />
+
                 <div className="popular-content flex-column flex-justify-sb">
                   <div className="popular-name-price flex-column">
                     <h2 className="fz16">{popular.name}</h2>
@@ -40,6 +43,7 @@ const Popular = () => {
                       <strong>€</strong>
                     </p>
                   </div>
+
                   <div className="popular-note">
                     {[...Array(popular.note)].map((_, i) => (
                       <FontAwesomeIcon icon={faStar} style={{ color: "#0065fc" }} key={i} />
@@ -53,8 +57,8 @@ const Popular = () => {
             </Link>
           );
         })}
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 

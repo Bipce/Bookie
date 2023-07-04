@@ -1,14 +1,18 @@
 .popular-box {
+  padding: 30px 20px;
+  background-color: #f2f2f2;
+}
+
+.popular-box,
+.poupular-box__articles {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
   gap: 15px;
-  background-color: #f2f2f2;
-  margin: 0;
 }
 
 .popular-article {
   background-color: #fff;
+  box-shadow: 0 3px 15px #0000001a;
   display: flex;
   gap: 15px;
   padding: 4px;
@@ -37,23 +41,24 @@
   color: #f2f2f2;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .popular-box {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-    margin: 30px 20px;
-    border-radius: 15px;
     margin: 30px 40px;
-    padding: 35px;
+    border-radius: 15px;
+    max-width: 924px;
+    order: 2;
   }
 
-  .popular-title {
-    width: 100%;
+  .poupular-box__articles {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .popular-box a {
-    width: 30%;
+    width: 275px;
+  }
+
+  .popular-img {
+    width: 91px;
   }
 }
