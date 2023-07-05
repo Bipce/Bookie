@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Filters />
-      <main className="flex-column">
+      <main className="sections">
         <Popular />
         <Accommodations />
       </main>

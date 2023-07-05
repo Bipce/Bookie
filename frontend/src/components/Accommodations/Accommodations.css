@@ -2,8 +2,7 @@
   padding: 30px 20px;
 }
 .accommodation-box,
-.accommodation-box__articles,
-.accommodation-article {
+.accommodation-box__articles {
   gap: 15px;
 }
 
@@ -13,7 +12,7 @@
 }
 
 .accommodation-content {
-  gap: 10px;
+  gap: 5px;
   margin-left: 15px;
 }
 
@@ -21,6 +20,7 @@
   box-shadow: 0 3px 15px #0000001a;
   border-radius: 20px;
   padding: 5px 5px 15px 5px;
+  gap: 10px;
 }
 
 .accommodation-img {
@@ -59,5 +59,21 @@
 
   .accommodation-box a {
     width: 31.5%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .accommodation-box {
+    height: fit-content;
+  }
+
+  .accommodation-content h2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .accommodation-box a {
+    width: 30%;
   }
 }

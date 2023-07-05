@@ -62,3 +62,15 @@
     width: 91px;
   }
 }
+
+@media (min-width: 1025px) {
+  .popular-box {
+    width: 30%;
+    gap: 35px;
+    margin-top: 0;
+  }
+
+  .poupular-box__articles {
+    flex-direction: column;
+  }
+}
