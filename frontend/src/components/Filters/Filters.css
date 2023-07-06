@@ -1,55 +1,14 @@
-.catchphrase {
-  font-weight: 400;
-  margin-top: 8px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  max-width: 335px;
-  width: 100%;
-  border: 1px solid #f2f2f2;
-  border-radius: 15px;
-  height: 49px;
-}
-
-.navbar svg {
-  height: 19px;
-}
-
-.map-icon {
-  padding: 15px 18.5px;
-  border-radius: 15px 0px 0px 15px;
-}
-
-.loop-icon {
-  color: #fff;
-  background-color: #0065fc;
-  padding: 15.5px 16px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.searchBar {
-  width: 195px;
-  outline: none;
-  width: 100%;
-}
-
-/* Filters */
-.filters-title {
+.filters--box__title {
   margin-bottom: 20px;
 }
 
-.filters {
+.filters--box__liste {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.filter {
+.filters--box__liste--filter {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -61,23 +20,23 @@
   cursor: pointer;
 }
 
-.filter:hover {
+.filters--box__liste--filter:hover {
   background-color: #deebff;
   transition: 0.2s;
 }
 
-.filter svg {
+.filters--box__liste--filter svg {
   font-size: 22px;
 }
 
-/* Info */
-.info {
+/* Subtext */
+.subtext {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.info svg {
+.subtext svg {
   color: #0065fc;
   border: 2px solid #d9d9d9;
   border-radius: 100%;
@@ -86,52 +45,38 @@
 }
 
 @media (min-width: 768px) {
-  .navbar {
-    width: fit-content;
-    gap: 0;
-    max-width: 377px;
-  }
-
-  .searchBar {
-    padding-left: 20px;
-  }
-
-  .loop-icon {
-    border-radius: 0 15px 15px 0;
-  }
-
-  .searchWord {
-    font-weight: 700;
-    padding: 15px 16px 15px 16px;
-  }
-
-  .filtersBox {
+  .filters--box {
     width: 668px;
   }
 
-  .filters {
+  .filters--box__liste {
     flex-wrap: nowrap;
     font-size: 16px;
   }
 
-  .filter {
+  .filters--box__liste--filter {
     justify-content: space-evenly;
   }
 }
 
 @media (min-width: 1024px) {
-  .filtersBox {
+  .filters--box {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
     width: auto;
   }
 
-  .filters-title {
+  .filters--box__title {
     padding: 10px 0;
+    margin-right: 20px;
   }
 
-  .filter {
+  .filters--box__liste--filter {
     width: auto;
     padding: 10px 20px;
+  }
+
+  .subtext {
+    width: 100%;
   }
 }

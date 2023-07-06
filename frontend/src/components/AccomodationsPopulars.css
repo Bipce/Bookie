@@ -1,0 +1,17 @@
+.common {
+  padding: 30px 20px;
+}
+
+.common,
+.common--articles--box {
+  gap: 15px;
+}
+
+.common--articles--box__article {
+  box-shadow: 0 3px 15px #0000001a;
+  border-radius: 20px;
+}
+
+.common--article--box__note svg {
+  color: #f2f2f2;
+}

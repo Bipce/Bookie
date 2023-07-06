@@ -1,0 +1,51 @@
+.navbar--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 335px;
+  width: 100%;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  height: 49px;
+}
+
+.navbar--box svg {
+  height: 19px;
+}
+
+.navbar--box__map--icon {
+  padding: 15px 18.5px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.navbar--box__loop-icon {
+  color: #fff;
+  background-color: #0065fc;
+  padding: 15.5px 16px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.navbar--box__searchBar {
+  width: 195px;
+  outline: none;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .navbar--box {
+    width: fit-content;
+    gap: 0;
+    max-width: 377px;
+  }
+
+  .navbar--box__searchBar {
+    padding-left: 20px;
+  }
+
+  .navbar--box__searchWord {
+    font-weight: 700;
+    padding: 15px 16px 15px 16px;
+  }
+}

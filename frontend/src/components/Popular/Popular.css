@@ -1,76 +1,68 @@
-.popular-box {
-  padding: 30px 20px;
+.popular--box {
   background-color: #f2f2f2;
 }
 
-.popular-box,
-.poupular-box__articles {
+.popular--box,
+.popular--box__articles {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
-.popular-article {
+.popular--box__articles--article {
   background-color: #fff;
-  box-shadow: 0 3px 15px #0000001a;
   display: flex;
   gap: 15px;
   padding: 4px;
-  border-radius: 20px;
 }
 
-.popular-img {
+.popular--box__articles--img {
   width: 111px;
   height: 146px;
   border-radius: 20px 0 0 20px;
 }
 
-.popular-content {
+.popular--box__articles--content {
   margin-top: 15px;
 }
 
-.popular-name-price {
+.popular--box__articles---name--price {
   gap: 5px;
 }
 
-.popular-note {
+.popular--box__articles--note {
   margin-bottom: 5px;
 }
 
-.popular-note svg {
-  color: #f2f2f2;
-}
-
 @media (min-width: 768px) {
-  .popular-box {
+  .popular--box {
     margin: 30px 40px;
     border-radius: 15px;
     max-width: 924px;
     order: 2;
   }
 
-  .poupular-box__articles {
+  .popular--box__articles {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .popular-box a {
+  .popular--box a {
     width: 275px;
   }
 
-  .popular-img {
+  .popular--box__articles--img {
     width: 91px;
   }
 }
 
 @media (min-width: 1025px) {
-  .popular-box {
+  .popular--box {
     width: 30%;
     gap: 35px;
     margin-top: 0;
   }
 
-  .poupular-box__articles {
+  .popular--box__articles {
     flex-direction: column;
   }
 }
