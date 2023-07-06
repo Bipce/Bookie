@@ -1,68 +1,68 @@
-.popular--box {
+.popular--section {
   background-color: #f2f2f2;
 }
 
-.popular--box,
-.popular--box__articles {
+.popular--section,
+.popular--box {
   display: flex;
   flex-direction: column;
 }
 
-.popular--box__articles--article {
+.popular--box__article {
   background-color: #fff;
   display: flex;
   gap: 15px;
   padding: 4px;
 }
 
-.popular--box__articles--img {
+.popular--box__img {
   width: 111px;
   height: 146px;
   border-radius: 20px 0 0 20px;
 }
 
-.popular--box__articles--content {
+.popular--box__contentt {
   margin-top: 15px;
 }
 
-.popular--box__articles---name--price {
+.popular--box__name--price {
   gap: 5px;
 }
 
-.popular--box__articles--note {
+.popular--box__note {
   margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
-  .popular--box {
+  .popular--section {
     margin: 30px 40px;
     border-radius: 15px;
     max-width: 924px;
     order: 2;
   }
 
-  .popular--box__articles {
+  .popular--box {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .popular--box a {
+  .popular--section a {
     width: 275px;
   }
 
-  .popular--box__articles--img {
+  .popular--box__img {
     width: 91px;
   }
 }
 
 @media (min-width: 1025px) {
-  .popular--box {
+  .popular--section {
     width: 30%;
     gap: 35px;
     margin-top: 0;
   }
 
-  .popular--box__articles {
+  .popular--box {
     flex-direction: column;
   }
 }

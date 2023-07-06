@@ -1,4 +1,5 @@
 import Accommodations from "../components/Accommodations/Accommodations";
+import Activities from "../components/Activities/Activities";
 import Filters from "../components/Filters/Filters";
 import Popular from "../components/Popular/Popular";
 
@@ -9,6 +10,7 @@ const Home = () => {
       <main className="sections">
         <Popular />
         <Accommodations />
+        <Activities />
       </main>
     </>
   );

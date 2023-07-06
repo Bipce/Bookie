@@ -1,5 +1,6 @@
 import axios, { AxiosResponse } from "axios";
 import { IAccommodation } from "../models/accommodations";
+import { IActivities } from "../models/activities";
 
 export const getAccommodations = async (isPopular?: boolean) => {
   let res: AxiosResponse<IAccommodation[], any>;
@@ -10,5 +11,10 @@ export const getAccommodations = async (isPopular?: boolean) => {
     res = await axios.get<IAccommodation[]>(`/accommodations?isPopular=${isPopular}`);
   }
 
+  return res.data;
+};
+
+export const getActivities = async () => {
+  const res = await axios.get<IActivities[]>("/activities");
   return res.data;
 };
