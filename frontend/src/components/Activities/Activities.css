@@ -1,3 +1,7 @@
+.activities--section {
+  margin-bottom: 30px;
+}
+
 .activities--section__title {
   margin-bottom: 15px;
 }
@@ -36,16 +40,41 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    width: 90%;
+  }
+
+  .activities--box__article--img {
+    height: 200px;
   }
 
   .activities--box__article--title {
     margin: auto 10px;
-    padding: 15px 10px;
+    height: 70px;
+    padding: 10px;
   }
 }
 
 @media (min-width: 1025px) {
   .activities--section {
     width: 100%;
+    margin: 10px;
+  }
+
+  .activities--box {
+    gap: 25px;
+  }
+
+  .activities--box__article {
+    max-width: 297.5px;
+    width: 100%;
+  }
+
+  .activities--box__article--img {
+    height: 380px;
+  }
+
+  .activities--box__article--title {
+    height: 59px;
+    padding-top: 18px;
   }
 }

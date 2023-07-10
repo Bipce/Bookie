@@ -36,7 +36,7 @@ const Popular = () => {
                   className="popular--box__img"
                 />
 
-                <div className="popular--box__content flex-column flex-justify-sb">
+                <div className="popular--box__content flex-column">
                   <div className="popular--box__name--price flex-column">
                     <h2 className="fz16">{popular.name}</h2>
                     <p>

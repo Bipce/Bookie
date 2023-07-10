@@ -1,0 +1,28 @@
+.footer {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer--box__title {
+  margin-bottom: 15px;
+}
+
+.footer--box__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin: 0 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer--box {
+    width: 33.33%;
+  }
+}

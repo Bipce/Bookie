@@ -35,6 +35,7 @@
 
   .accommodation--box__article {
     background-color: #fff;
+    height: 100%;
   }
 
   .accommodation--box {
@@ -51,16 +52,11 @@
 
 @media (min-width: 1025px) {
   .accommodation--section {
-    height: fit-content;
+    width: 66.5%;
+    margin: 0;
   }
 
-  .accommodation--box__content h2 {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .accommodation--section a {
-    width: 30%;
+  .accommodation--box__article {
+    height: 100%;
   }
 }

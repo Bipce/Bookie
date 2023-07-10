@@ -63,7 +63,8 @@
 
   .header--box__anchors {
     min-width: 320px;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 80px;
   }
 
   .header--box__anchors--anchor {
