@@ -4,7 +4,7 @@ import { getAccommodations } from "../../services/backend";
 import { useEffect, useState } from "react";
 import { IAccommodation } from "../../models/accommodations";
 import { Link } from "react-router-dom";
-import "./Popular.css";
+import "./Populars.css";
 import "../Common.css";
 
 const Popular = () => {

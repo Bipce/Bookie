@@ -18,3 +18,9 @@ export const getActivities = async () => {
   const res = await axios.get<IActivities[]>("/activities");
   return res.data;
 };
+
+export const getAccommodation = async (id: string) => {
+  const res = await axios.get<IAccommodation>(`/accommodations/${id}`);
+
+  return res.data;
+};

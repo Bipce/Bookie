@@ -6,9 +6,11 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header--box">
-        <h1 className="header--box__title">
-          <img src={logo} alt="logo" className="header--box__logo" />
-        </h1>
+        <Link to="/">
+          <h1 className="header--box__title">
+            <img src={logo} alt="logo" className="header--box__logo" />
+          </h1>
+        </Link>
 
         <ul className="fz16 header--box__anchors">
           <li className="header--box__anchors--anchor">

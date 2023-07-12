@@ -17,23 +17,23 @@ const Accommodations = () => {
   }, []);
 
   return (
-    <section className="accommodation--section common flex-column">
+    <section className="accommodations--section common flex-column">
       <div>
         <h2 className="fz22">Hébergements à Marseille</h2>
       </div>
 
-      <div className="accommodation--box common--articles--box">
+      <div className="accommodations--box common--articles--box">
         {accommodations?.map(accommodations => {
           return (
-            <Link to="" key={accommodations._id}>
-              <article className="accommodation--box__article common--articles--box__article flex-column">
+            <Link to={`/accommodation/${accommodations._id}`} key={accommodations._id}>
+              <article className="accommodations--box__article common--articles--box__article flex-column">
                 <img
                   src={`http://localhost:3000/images/accommodations/${accommodations.photo}`}
                   alt={accommodations.name}
-                  className="accommodation--box__article--img"
+                  className="accommodations--box__article--img"
                 />
 
-                <div className="accommodation--box__content flex-column">
+                <div className="accommodations--box__content flex-column">
                   <h2 className="fz16">{accommodations.name}</h2>
                   <p>
                     Nuit à partir de {accommodations.price}
