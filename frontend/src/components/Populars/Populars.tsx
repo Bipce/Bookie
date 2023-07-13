@@ -28,7 +28,7 @@ const Popular = () => {
       <div className="popular--box common--articles--box">
         {populars?.map(popular => {
           return (
-            <Link to="/" key={popular._id}>
+            <Link to={`/accommodation/${popular._id}`} key={popular._id}>
               <article className="popular--box__article common--articles--box__article">
                 <img
                   src={`http://localhost:3000/images/accommodations/${popular.photo}`}
