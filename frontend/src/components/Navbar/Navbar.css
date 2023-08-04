@@ -37,7 +37,7 @@
   .navbar--box {
     width: fit-content;
     gap: 0;
-    max-width: 377px;
+    max-width: 577px;
   }
 
   .navbar--box__searchBar {
@@ -46,6 +46,6 @@
 
   .navbar--box__searchWord {
     font-weight: 700;
-    padding: 15px 16px 15px 16px;
+    padding: 12px;
   }
 }

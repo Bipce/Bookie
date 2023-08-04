@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo from "../../assets/logo/Booki.png";
 import "./Header.css";
 
@@ -14,10 +15,10 @@ const Header = () => {
 
         <ul className="fz16 header--box__anchors">
           <li className="header--box__anchors--anchor">
-            <Link to="/">Hébergements</Link>
+            <HashLink to="/#accommodations--section">Hébergements</HashLink>
           </li>
           <li className="header--box__anchors--anchor">
-            <Link to="/">Activités</Link>
+            <HashLink to="/">Activités</HashLink>
           </li>
         </ul>
       </div>

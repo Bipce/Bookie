@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { getAccommodations } from "../../services/backend";
-import { IAccommodation } from "../../models/accommodations";
+import { IAccommodations } from "../../models/accommodations";
 import "./Accommodations.css";
 import "../Common.css";
 
 const Accommodations = () => {
-  const [accommodations, setAccommodations] = useState<IAccommodation[]>();
+  const [accommodations, setAccommodations] = useState<IAccommodations[]>();
 
   useEffect(() => {
     (async () => {

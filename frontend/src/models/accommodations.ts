@@ -1,4 +1,4 @@
-export interface IAccommodation {
+export interface IAccommodations {
   _id: string;
   name: string;
   price: number;

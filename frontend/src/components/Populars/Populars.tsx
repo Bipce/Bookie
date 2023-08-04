@@ -2,13 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine, faStar } from "@fortawesome/free-solid-svg-icons";
 import { getAccommodations } from "../../services/backend";
 import { useEffect, useState } from "react";
-import { IAccommodation } from "../../models/accommodations";
+import { IAccommodations } from "../../models/accommodations";
 import { Link } from "react-router-dom";
 import "./Populars.css";
 import "../Common.css";
 
 const Popular = () => {
-  const [populars, setPopupars] = useState<IAccommodation[]>();
+  const [populars, setPopupars] = useState<IAccommodations[]>();
 
   useEffect(() => {
     (async () => {

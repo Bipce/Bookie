@@ -3,7 +3,8 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Accommodation from "./pages/Accommodation/Accommodation";
+import Accommodation from "./pages/Accommodation";
+import Activitie from "./pages/Activitie";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/accommodation/:id" element={<Accommodation />} />
+        <Route path="/activitie/:id" element={<Activitie />} />
       </Routes>
 
       <Footer />

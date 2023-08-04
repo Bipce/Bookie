@@ -1,14 +1,14 @@
 import axios, { AxiosResponse } from "axios";
-import { IAccommodation } from "../models/accommodations";
+import { IAccommodations } from "../models/accommodations";
 import { IActivities } from "../models/activities";
 
 export const getAccommodations = async (isPopular?: boolean) => {
-  let res: AxiosResponse<IAccommodation[], any>;
+  let res: AxiosResponse<IAccommodations[], any>;
 
   if (isPopular == null) {
-    res = await axios.get<IAccommodation[]>("/accommodations");
+    res = await axios.get<IAccommodations[]>("/accommodations");
   } else {
-    res = await axios.get<IAccommodation[]>(`/accommodations?isPopular=${isPopular}`);
+    res = await axios.get<IAccommodations[]>(`/accommodations?isPopular=${isPopular}`);
   }
 
   return res.data;
@@ -20,7 +20,13 @@ export const getActivities = async () => {
 };
 
 export const getAccommodation = async (id: string) => {
-  const res = await axios.get<IAccommodation>(`/accommodations/${id}`);
+  const res = await axios.get<IAccommodations>(`/accommodations/${id}`);
+
+  return res.data;
+};
+
+export const getActivitie = async (id: string) => {
+  const res = await axios.get<IActivities>(`/activities/${id}`);
 
   return res.data;
 };

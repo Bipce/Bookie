@@ -20,7 +20,7 @@ const Activities = () => {
       <div className="activities--box common--articles--box">
         {activities?.map(activitie => {
           return (
-            <Link to="" key={activitie._id}>
+            <Link to={`/activitie/${activitie._id}`} key={activitie._id}>
               <article className="activities--box__article common--articles--box__article ">
                 <img
                   src={`http://localhost:3000/images/activities/${activitie.photo}`}
