@@ -52,7 +52,7 @@ The project focuses on:
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:Bipce/Bookie.git
 cd Bookie-main
 ```
 
