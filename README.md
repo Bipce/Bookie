@@ -16,12 +16,12 @@ The frontend was rebuilt with React and connected to a custom Express REST API. 
 
 The project focuses on:
 
-* Frontend / backend communication
-* REST API architecture
-* Component organization
-* Data structuring
-* Separation of concerns
-* Full-stack application design
+- Frontend / backend communication
+- REST API architecture
+- Component organization
+- Data structuring
+- Separation of concerns
+- Full-stack application design
 
 ---
 
@@ -29,21 +29,21 @@ The project focuses on:
 
 ### Frontend
 
-* React
-* Vite
-* TypeScript
-* React Router
-* Axios
-* CSS3
+- React
+- Vite
+- TypeScript
+- React Router
+- Axios
+- CSS3
 
 ### Backend
 
-* Node.js
-* Express
-* TypeScript
-* MongoDB
-* Mongoose
-* Docker
+- Node.js
+- Express
+- TypeScript
+- MongoDB
+- Mongoose
+- Docker
 
 ---
 
@@ -188,20 +188,20 @@ Bookie-main/
 
 #### Backend
 
-* data/ – Legacy mock data from the initial frontend version
-* models/ – Mongoose schemas and TypeScript models
-* routes/ – Express API routes
-* services/ – Database and business logic
-* app.ts – Backend entry point
+- data/ – Legacy mock data from the initial frontend version
+- models/ – Mongoose schemas and TypeScript models
+- routes/ – Express API routes
+- services/ – Database and business logic
+- app.ts – Backend entry point
 
 #### Frontend
 
-* components/ – Reusable UI components
-* models/ – Shared TypeScript models
-* pages/ – Application pages
-* services/ – API communication layer
-* App.tsx – Routing configuration
-* main.tsx – Frontend entry point
+- components/ – Reusable UI components
+- models/ – Shared TypeScript models
+- pages/ – Application pages
+- services/ – API communication layer
+- App.tsx – Routing configuration
+- main.tsx – Frontend entry point
 
 ---
 
@@ -209,10 +209,10 @@ Bookie-main/
 
 Users can:
 
-* Browse accommodations
-* Browse activities
-* Access detailed pages
-* Retrieve data from a backend API
+- Browse accommodations
+- Browse activities
+- Access detailed pages
+- Retrieve data from a backend API
 
 Routing is handled with React Router for smooth page navigation.
 
@@ -244,13 +244,13 @@ The frontend was structured around reusable components and page-based routing.
 
 Main UI sections include:
 
-* Header
-* Navigation bar
-* Filters
-* Popular section
-* Accommodations section
-* Activities section
-* Footer
+- Header
+- Navigation bar
+- Filters
+- Popular section
+- Accommodations section
+- Activities section
+- Footer
 
 The application follows a modular structure to simplify feature evolution and maintenance.
 
@@ -260,12 +260,12 @@ The application follows a modular structure to simplify feature evolution and ma
 
 The backend is responsible for:
 
-* Exposing REST API endpoints
-* Serving accommodations data
-* Serving activities data
-* Managing MongoDB communication
-* Structuring routes and services cleanly
-* Exposing REST API endpoints used by the frontend
+- Exposing REST API endpoints
+- Serving accommodations data
+- Serving activities data
+- Managing MongoDB communication
+- Structuring routes and services cleanly
+- Exposing REST API endpoints used by the frontend
 
 The backend centralizes data access and separates application logic from the frontend.
 
@@ -273,12 +273,12 @@ The backend centralizes data access and separates application logic from the fro
 
 ## 📈 Possible Next Steps
 
-* Add authentication
-* Add search and filtering
-* Add loading and error states
-* Add admin management features
-* Deploy frontend and backend
-* Add testing
+- Add authentication
+- Add search and filtering
+- Add loading and error states
+- Add admin management features
+- Deploy frontend and backend
+- Add testing
 
 ---
 
@@ -288,12 +288,27 @@ This project was originally based on the OpenClassrooms "Reservia" frontend proj
 
 The goal of the refactor was to practice:
 
-* Backend architecture
-* REST API development
-* MongoDB integration
-* Docker usage
-* Frontend / backend communication
-* Data organization and separation
-* Scalable project structure
+- Backend architecture
+- REST API development
+- MongoDB integration
+- Docker usage
+- Frontend / backend communication
+- Data organization and separation
+- Scalable project structure
 
 The project was primarily built as a learning project focused on modern full-stack web development practices.
+
+## 📸 Screenshots
+
+<table style="border: none;">
+  <tr style="border: none;">
+    <td align="center" style="border: none;">
+      <strong>Homepage</strong><br><br>
+      <img src="./assets/home-page.png" width="88%" />
+    </td>
+    <td align="center" style="border: none;">
+      <strong>Accommodation Details</strong><br><br>
+      <img src="./assets/accommodation-page.png" width="90%" />
+    </td>
+  </tr>
+</table>
