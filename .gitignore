@@ -1,3 +1,8 @@
 # Directory
 node_modules/
 .idea/
+
+# Environment variables
+.env
+.env.*
+!.env.example
