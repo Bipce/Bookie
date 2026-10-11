@@ -8,9 +8,9 @@
 
 ## 📖 Overview
 
-Bookie is a full-stack accommodation booking application inspired by the original OpenClassrooms project "Reservia".
+Bookie is a full-stack accommodation booking application.
 
-The project originally started as a frontend-only school project before being completely redesigned into a more realistic full-stack architecture.
+The project originally started as a frontend-only project before being completely redesigned into a more realistic full-stack architecture.
 
 The frontend was rebuilt with React and connected to a custom Express REST API. The backend exposes accommodations and activities data stored in MongoDB and organized through routes, services, and models.
 
@@ -231,7 +231,7 @@ Service Layer (Axios)
         ↓
 Express API
         ↓
-JSON data files
+MongoDB
 ```
 
 This architecture helps keep responsibilities clearly separated and improves maintainability.
@@ -284,9 +284,7 @@ The backend centralizes data access and separates application logic from the fro
 
 ## 📝 Notes
 
-This project was originally based on the OpenClassrooms "Reservia" frontend project before being redesigned into a full-stack application.
-
-The goal of the refactor was to practice:
+The goal of the full-stack redesign was to practice:
 
 - Backend architecture
 - REST API development
