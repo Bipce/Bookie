@@ -271,14 +271,9 @@ The backend centralizes data access and separates application logic from the fro
 
 ---
 
-## 📈 Possible Next Steps
+## 📊 Project Status
 
-- Add authentication
-- Add search and filtering
-- Add loading and error states
-- Add admin management features
-- Deploy frontend and backend
-- Add testing
+The project is complete and is no longer actively developed.
 
 ---
 
