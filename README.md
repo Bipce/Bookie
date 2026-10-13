@@ -205,16 +205,11 @@ Bookie-main/
 
 ---
 
-## 🔗 Application Features
+## ✨ Features
 
-Users can:
-
-- Browse accommodations
-- Browse activities
-- Access detailed pages
-- Retrieve data from a backend API
-
-Routing is handled with React Router for smooth page navigation.
+- Browse accommodations and activities
+- Detailed pages for each accommodation and activity
+- Data served by a custom REST API backed by MongoDB
 
 ---
 
